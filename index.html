@@ -1,37 +1,72 @@
 <html>
-    <head></head>
-    <body>
+    <head>
         <style>
-        body {
-           background-color: #5b5c56;
-        }
-        #main {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        img {
-            width: 25rem;
-            height: 25rem;
-            border: 2px solid #080b02;
-        }
-        h1 {
-            color: #989c8b;
-            text-shadow: 2px 0 #080b02, -2px 0 #080b02, 0 2px #080b02, 0 -2px #080b02,
-               1px 1px #080b02, -1px -1px #080b02, 1px -1px #080b02, -1px 1px #080b02;
-        }
-        #nixring > * {
-            color: #989c8b;
-        }
+            body {
+                background-color: #5b5c56;
+            }
+            #main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #cat_cig {
+                width: 25rem;
+                height: 25rem;
+                border: 2px solid #080b02;
+            }
+            #title {
+                color: #989c8b;
+                font-size: 3rem;
+                font-weight: bold;
+                text-shadow: 2px 0 #080b02, -2px 0 #080b02, 0 2px #080b02, 0 -2px #080b02,
+                1px 1px #080b02, -1px -1px #080b02, 1px -1px #080b02, -1px 1px #080b02;
+            }
+            #my_links > * {
+                color: #989c8b;
+
+            }
+            #nixring > * {
+                color: #989c8b;
+            }
+            #about {
+                margin: 2rem 8rem 2rem 8rem;
+                max-width: 50rem; 
+                color: #adafa7;
+                text-align: center;
+                font: 1.5rem Verdana, serif;
+            }
+            #gif_small {
+                width: 88px;
+                height: 32px;
+            }
+            #gifs {
+                margin: 2rem 8rem 2rem;
+                position: fixed;
+                bottom: 0px;
+            }
         </style>
+    </head>
+    <body>
         <div id="main">
-            <h1>In progress...</h1>
-            <img src="./cat1.jpg" alt="cat with a cig"/>
+            <div id="title">emo mruczek</div>
+            <img id="cat_cig" src="./cat1.jpg" alt="cat with a cig"/>
+            <div id="about">Hello!</br>Name's Felix, a twenty-something fella from Poland.</br>My current special interests are bare-metal programming on stm32, electronics and Linux.</br>
+            I'm fond of cross-stitching, baking and taking care of my numerous succulents. I can appreciate a good sci-fi or danmei. I'm also learning Japanese cuz I can't stand mistranslations!</br>
+            This site is still a work in progress. Soon you'll be able to learn more about me here...</br> 
+            </div>
+            <div id="my_links">
+                <a href="https://github.com/emo-mruczek">My github</a>
+                <a>My cv (jk, it's not there yet...)</a>
+            </div> 
             <div id="nixring">
                 <a href="https://nixwebr.ing/prev/emo-mruczek">&lt;&lt;</a>
                 <a href="https://nixwebr.ing">Nix WebRing</a>
                 <a href="https://nixwebr.ing/next/emo-mruczek">&gt;&gt;</a>
+            </div>
+            <div id="gifs">
+            <a href="https://neonaut.neocities.org/cyber/88x31"><img id="gif_small" src="./assets/88by31.gif" alt="88by31"></a>
+            <a href="https://tranzycja.pl"><img id="gif_small" src="./assets/transnow2.gif" alt="trans rights now!"></a>
             </div>
         </div>
     </body>
